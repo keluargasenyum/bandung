@@ -1,6 +1,6 @@
 import streamlit as st
 st.write("""
-# Selmat datang!
+# Keluarga Senyum
 """)
 
-number = st.date_input("Date")
+number = st.txt_input("Nama : ")

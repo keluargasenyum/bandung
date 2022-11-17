@@ -2,7 +2,7 @@ import streamlit as st
 st.write("""
 # Keluarga Senyum
 """)
-a = str(input("Nama : "))
-b = str(input("Kelas : "))
+a = st.text_input("Nama : ")
+b = st.text_input("Kelas : ")
 st.write("Nama : ",a)
 st.write("Kelas : ",b)

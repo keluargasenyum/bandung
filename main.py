@@ -1,22 +1,21 @@
 import streamlit as st
 
+def get_user_name():
+    return 'John'
 
+with st.echo():
+    # Everything inside this block will be both printed to the screen
+    # and executed.
 
-st.write("""
-# Keluarga Senyum
-""")
-menu = {
-"Ayam goreng" : 20000,
-"Asin " : 60000
-}
+    def get_punctuation():
+        return '!!!'
 
-for i in menu
-   st.write("Menu",i,"Harga",menu[i]
+    greeting = "Hi there, "
+    value = get_user_name()
+    punctuation = get_punctuation()
 
+    st.write(greeting, value, punctuation)
 
-
-
-a = st.text_input("Nama : ")
-b = st.text_input("Kelas : ")
-st.write("Nama : ",a)
-st.write("Kelas : ",b)
+# And now we're back to _not_ printing to the screen
+foo = 'bar'
+st.write('Done!')

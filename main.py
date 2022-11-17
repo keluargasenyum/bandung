@@ -2,5 +2,7 @@ import streamlit as st
 st.write("""
 # Keluarga Senyum
 """)
-
-st.select_slider(label, options=(), value=None, format_func=special_internal_function, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False, label_visibility="visible")
+a = 2
+b = 3
+t = a+b
+st.write("Nilai :",t)
